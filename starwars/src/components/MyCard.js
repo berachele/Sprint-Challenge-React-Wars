@@ -5,7 +5,7 @@ import styled from "styled-components"
 const MyCard = props => {
     const CardBodyStyles = styled.div`
         background-color: rgba(255,228,181, 0.5);
-        
+
     `
 
     const Title = styled.h3`
@@ -29,7 +29,7 @@ const MyCard = props => {
                     <Text>Hair Color: {props.hair}</Text>
                     <Text>Eye Color: {props.eye}</Text>
                     <Text>Birth Year: {props.dob}</Text>
-                    <Text>HomeWorld: Testing {props.homeworld}</Text>
+                    {/* <Text>HomeWorld: Testing {props.homeworld}</Text> */}
                     <Text>Films Appeared in: {props.films}</Text>
                 </CardBodyStyles>
             </Card>
