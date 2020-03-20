@@ -1,4 +1,5 @@
 import React from 'react';
+import ParentCard from "./components/ParentCard"
 import './App.css';
 
 const App = () => {
@@ -12,7 +13,9 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
+      <ParentCard/>
     </div>
+    
   );
 }
 
