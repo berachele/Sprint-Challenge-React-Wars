@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react"
-import Card from "./Card"
+import MyCard from "./MyCard"
 import axios from "axios"
+import {Container, Row} from "reactstrap"
 
 const ParentCard = () => {
     //set up our states
@@ -33,11 +34,13 @@ const ParentCard = () => {
     // }, [planet])
 
     return (
-        <div>
-            {profile.map((item, index)=> {
-               return <Card key={index} name={item.name} gender ={item.gender} height={item.height} hair={item.hair_color} eye={item.eye_color} dob={item.birth_year} homeworld={item.homeworld} films={item.films.length}/>
-            })}
-        </div>
+        <Container>
+            <Row>
+                {profile.map((item, index)=> {
+                return <MyCard key={index} name={item.name} gender ={item.gender} height={item.height} hair={item.hair_color} eye={item.eye_color} dob={item.birth_year} homeworld={item.homeworld} films={item.films.length}/>
+                })}
+            </Row>
+        </Container>
     )
 }
 export default ParentCard
