@@ -5,6 +5,7 @@ import styled from "styled-components"
 const MyCard = props => {
     const CardBodyStyles = styled.div`
         background-color: rgba(255,228,181, 0.5);
+        
     `
 
     const Title = styled.h3`

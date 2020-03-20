@@ -37,8 +37,13 @@ const ParentCard = () => {
         <Container>
             <Row>
                 {profile.map((item, index)=> {
-                return <MyCard key={index} name={item.name} gender ={item.gender} height={item.height} hair={item.hair_color} eye={item.eye_color} dob={item.birth_year} homeworld={item.homeworld} films={item.films.length}/>
+                    return <MyCard key={index} name={item.name} gender ={item.gender} height={item.height} hair={item.hair_color} eye={item.eye_color} dob={item.birth_year} films={item.films.length}/>
                 })}
+
+                {/* {planet.map(item=>{
+                    console.log(item)
+                    return <MyCard homeworld={item.homeworld}/>
+                })} */}
             </Row>
         </Container>
     )
